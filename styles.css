@@ -45,15 +45,15 @@ li a:hover {
     background-color: #111;
 }
 
+h1 {
+    text-align: center;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Simplified grid setup */
     gap: 0;
     justify-content: space-around;
-}
-
-.spotlight {
-    grid-column: 1 / -1; /* Spans all columns */
 }
 
 .intro {
@@ -78,6 +78,20 @@ li a:hover {
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
+}
+
+.spotlight {
+    grid-column: 1 / -1; /* Spans all columns */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Optional: space between text and image */
+    align-items: center; /* Vertically center the items */
+    padding: 20px;
+}
+
+.image-content img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .card:hover {
