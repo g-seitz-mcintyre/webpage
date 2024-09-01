@@ -43,7 +43,8 @@ li a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0;
     justify-content: space-around;
 }
 
