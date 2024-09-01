@@ -119,6 +119,12 @@ footer {
     .intro {
         grid-column: 1 / -1; /* Ensure it spans only one column on small screens */
     }
+
+    .spotlight {
+        grid-column: 1 / -1; /* Ensure it spans only one column on small screens */
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto; /* Allow rows to adjust automatically */
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -131,5 +137,11 @@ footer {
 
     .intro {
         grid-column: 1 / -1; /* Ensure it spans only one column on small screens */
+    }
+
+    .spotlight {
+        grid-column: 1 / -1; /* Ensure it spans only one column on small screens */
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto; /* Allow rows to adjust automatically */
     }
 }
