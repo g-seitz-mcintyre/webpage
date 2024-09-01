@@ -52,6 +52,10 @@ li a:hover {
     justify-content: space-around;
 }
 
+.spotlight {
+    grid-column: 1 / -1; /* Spans all columns */
+}
+
 .intro {
     grid-column: 1 / -1; /* Spans all columns */
 }
