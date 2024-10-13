@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
 
     <title>Contact</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
 
@@ -40,30 +40,25 @@
     <main class="grid-container">
 
         <section class="intro card">
-            <img id="main-banner" src="./images/get-in-touch.png">
-            <div>
-                <h2>Contact Info (<b>Fictional!</b>)</h2>
-                <p>
-                    We’d love to hear from you! If you have any questions, feedback, or are interested in learning more about our services, please reach out to us.
-                </p>
-                <p>
-                    <b>Seitz-McIntyre Consulting</b> <br>
-                    Your Partners in Strategic Marketing
-                </p>
-                <p>
-                    <b>Email</b>: info@seitzmcintyreconsulting.com <br>
-                    <b>Phone</b>: (555) 123-4567 <br>
-                    <b>Address</b>: 123 Marketing Way, Suite 456, New City, NY 10001 <br>
-                </p>
-                <p>
-                    <b>Business Hours</b>: <br>
-                    Monday - Friday: 9:00 AM - 6:00 PM <br>
-                    Saturday - Sunday: Closed <br>
-                </p>
-                <p>
-                    Let’s connect and start transforming your marketing strategy today!
-                </p>
-            </div>  
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name.." required>
+            
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your email.." required>
+            
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+            
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write your message.." required></textarea>
+            
+                  <button type="submit">Submit</button>
+                </form>
+                <div id="formResponse"></div>
+              </div>
         </section>
         
     </main>
@@ -72,6 +67,6 @@
         <p>&copy; 2024 Seitz-McIntyre Consulting.&nbsp;All rights reserved.</p>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="./form.js"></script>
 </body>
 </html>
