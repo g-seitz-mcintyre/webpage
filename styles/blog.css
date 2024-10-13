@@ -12,7 +12,7 @@ body {
     box-sizing: border-box; /* Add this for consistent sizing */
 }
 
-header {
+.nav {
     width: 100%;
     text-align: center;
     margin: 0;
@@ -69,6 +69,7 @@ li a:hover {
 
 .card-link {
     text-decoration: none;
+    color: black;
 }
 
 .card-link:visited {
