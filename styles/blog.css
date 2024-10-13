@@ -72,20 +72,6 @@ li a:hover {
     margin: 10px;
 }
 
-.spotlight {
-    grid-column: 1 / -1; /* Spans all columns */
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Optional: space between text and image */
-    align-items: center; /* Vertically center the items */
-    padding: 20px;
-}
-
-.spotlight-image img {
-    max-width: 100%; /* Ensure the image fits within its container */
-    height: auto; /* Maintain aspect ratio */
-}
-
 .card:hover {
     box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.3);
 }
