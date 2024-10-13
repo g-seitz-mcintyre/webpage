@@ -98,7 +98,6 @@ footer {
     background-color: #ED712E;
     color: white;
     text-align: center;
-    padding: 10px 0; /* Ensure there's some padding */
 }
 
 @media only screen and (max-width: 1000px) {
