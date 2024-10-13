@@ -1,3 +1,8 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-color: #FAF9F6;
     display: grid;
@@ -24,8 +29,8 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0; /* Ensure there's no padding */
-    margin: 0; /* Ensure there's no margin */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -47,8 +52,8 @@ li a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Simplified grid setup */
-    gap: 0;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
 }
 
@@ -62,6 +67,15 @@ li a:hover {
     width: 100%;
 }
 
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -70,6 +84,7 @@ li a:hover {
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
+    margin-bottom: 10px;
 }
 
 .card:hover {
@@ -86,7 +101,7 @@ footer {
     padding: 10px 0; /* Ensure there's some padding */
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
 
     #banner {
         display: none;
@@ -109,17 +124,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     .grid-container {
         grid-template-columns: 1fr;
         gap: 10px; /* Optional: spacing between cards */
         justify-content: center;
-    }
-
-    .spotlight {
-        grid-column: 1 / -1; /* Ensure it spans only one column on small screens */
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto auto; /* Allow rows to adjust automatically */
     }
 }
