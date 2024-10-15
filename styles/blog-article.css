@@ -1,5 +1,15 @@
+.section {
+    grid-column: 1 / -1; /* Spans all columns */
+}
+
 article {
     padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#article-img {
+    width: 100%;
 }
 
 article h2 {
@@ -30,5 +40,11 @@ article p {
 
 article {
     line-height: 1.8;
+}
+
+@media only screen and (max-width: 700px) {
+    article {
+        width: 100%;
+    }
 }
 
