@@ -25,6 +25,10 @@
     margin-bottom: 10px;
 }
 
+.placeholder {
+    display: none;
+}
+
 .card:hover {
     box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.3);
 }
