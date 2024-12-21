@@ -1,0 +1,50 @@
+.section {
+    grid-column: 1 / -1; /* Spans all columns */
+}
+
+article {
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#article-img {
+    width: 100%;
+}
+
+article h2 {
+    font-size: 22px;
+    color: #222;
+    margin: 20px 0 10px;
+}
+
+article p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+article blockquote {
+    font-style: italic;
+    color: #666;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Improved Readability on Mobile */
+article p {
+    margin-bottom: 1.5em;
+}
+
+article {
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 700px) {
+    article {
+        width: 100%;
+    }
+}
+

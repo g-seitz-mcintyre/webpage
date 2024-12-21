@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MF7BC8CR58"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MF7BC8CR58');
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("2XbYZZnlbcGZAUxkM");  // Replace with your EmailJS public key
+        })();
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="The Marketing Blog">
-    <meta property="og:description" content="Cool blog on everything marketing.">
+    <meta property="og:title" content="The E-Commerce & Digital Marketing Blog">
+    <meta property="og:description" content="Blog on various topics related to e-commerce and digital marketing.">
     <meta property="og:image" content="https://i.ibb.co/RcqvkrT/website-thumbnail.png">
     <meta property="og:url" content="https://seitz-mcintyre.com">
     <meta property="og:type" content="website">
 
     <title>Contact</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
 
-    <header>
-        <img id="banner" src="/images/contact.png">
+    <header class="nav">
+        <img id="banner" src="./images/main-banner.png">
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -28,41 +45,48 @@
         </nav>
     </header>
 
-    <main class="grid-container">
-
-        <section class="intro card">
-            <img id="main-banner" src="/images/get-in-touch.png">
-            <div>
-                <h2>Contact Info (<b>Fictional!</b>)</h2>
-                <p>
-                    We’d love to hear from you! If you have any questions, feedback, or are interested in learning more about our services, please reach out to us.
-                </p>
-                <p>
-                    <b>Seitz-McIntyre Consulting</b> <br>
-                    Your Partners in Strategic Marketing
-                </p>
-                <p>
-                    <b>Email</b>: info@seitzmcintyreconsulting.com <br>
-                    <b>Phone</b>: (555) 123-4567 <br>
-                    <b>Address</b>: 123 Marketing Way, Suite 456, New City, NY 10001 <br>
-                </p>
-                <p>
-                    <b>Business Hours</b>: <br>
-                    Monday - Friday: 9:00 AM - 6:00 PM <br>
-                    Saturday - Sunday: Closed <br>
-                </p>
-                <p>
-                    Let’s connect and start transforming your marketing strategy today!
-                </p>
-            </div>  
-        </section>
-        
+    <main>
+            <div class="contact-form-container">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name.." required>
+            
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your email.." required>
+            
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+            
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write your message.." required></textarea>
+            
+                  <button type="submit">Submit</button>
+                </form>
+                <div id="formResponse"></div>
+              </div>        
     </main>
 
     <footer>
         <p>&copy; 2024 Seitz-McIntyre Consulting.&nbsp;All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Send form data using EmailJS
+            emailjs.sendForm('service_jy1kyer', 'template_smgozdq', this)  // Replace with your actual service ID and template ID
+                .then(() => {
+                    document.getElementById('formResponse').innerText = "Thank you for contacting us!";
+                    document.getElementById('formResponse').style.color = 'green';
+                    document.getElementById('contactForm').reset();
+                }, (error) => {
+                    document.getElementById('formResponse').innerText = "There was an error sending your message. Please try again.";
+                    document.getElementById('formResponse').style.color = 'red';
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
 </body>
 </html>

@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MF7BC8CR58"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MF7BC8CR58');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="The Marketing Blog">
-    <meta property="og:description" content="Cool blog on everything marketing.">
+    <meta property="og:title" content="The E-Commerce & Digital Marketing Blog">
+    <meta property="og:description" content="Blog on various topics related to e-commerce and digital marketing.">
     <meta property="og:image" content="https://i.ibb.co/RcqvkrT/website-thumbnail.png">
     <meta property="og:url" content="https://seitz-mcintyre.com">
     <meta property="og:type" content="website">
 
     <title>Blog</title>
-    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/blog.css">
 </head>
 <body>
 
-    <header>
-        <img id="banner" src="/images/marketing.png">
+    <header class="nav">
+        <img id="banner" src="./images/main-banner.png">
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -30,54 +40,49 @@
 
     <main class="grid-container">
         
-        <article class="spotlight card">
-            <div class="spotlight-text">
-                <h2>Forget the Funnel: Unlocking Customer-Led Growth</h2>
-                <p>
-                    Are you tired of outdated marketing tactics that treat customers as mere numbers in a funnel? In "Forget the Funnel," you’ll discover a revolutionary approach to growth that places your customers at the heart of your strategy. This book challenges conventional marketing wisdom, showing you how to break free from rigid frameworks and embrace a customer-led mindset that drives real, sustainable growth.
-                </p>
-                <p>
-                    Through practical advice, real-world case studies, and actionable insights, "Forget the Funnel" guides you in understanding your customers deeply, crafting personalized experiences, and building lasting relationships that fuel success. Whether you're a marketer, product leader, or business owner, this book provides the blueprint to reimagine your approach and start growing your business the way it should be—with the customer in mind.
-                </p>
-                <p>
-                    Get ready to forget the funnel and embrace a smarter way to connect, engage, and thrive in today’s competitive landscape!
-                </p>
-                
-            </div>
-            <div class="spotlight-image">
-                <img src="/images/forget-the-funnel.gif" alt="Description of image">
-            </div>
-        </article>
+        <a href="./ecom-trends-2024.html" class="card-link">
+            <article class="card">
+                <img class="thumbnail" src="./images/ecom-trends-2024.png" alt="">
+                <div class="container">
+                    <h2>E-Commerce Trends in 2024: What's Changing the Game?</h2>
+                    <p>
+                        E-commerce is rapidly evolving, and 2024 brings some exciting changes to the industry. 
+                        In this article, I explore key trends like AI-driven personalization and the rise of sustainable shopping. 
+                        Whether you're just starting out or looking to stay informed, these insights will help you understand how the landscape is shifting and what it means for the future of online retail.
+                    </p>
+                </div>
+            </article>
+        </a>
 
-        <article id="confidential" class="card">
-            <img class="thumbnail" src="/images/they-ask-you-answer.png">
-            <div>
-                <h2>They Ask, You Answer</h2>
+        <article class="card placeholder">
+            <img class="thumbnail" src="./images/blog-thumbnail-placeholder.png">
+            <div class="container">
+                <h2>Title</h2>
                 <p>
-                    "They Ask, You Answer" is a marketing guide that emphasizes addressing customer questions directly through content, positioning your business as a trusted resource and driving growth through transparency and trust.
+                    Description.
                 </p>
                 <span class="date">03.09.2024</span>
             </div>
             
         </article>
 
-        <article class="card">
-            <img class="thumbnail" src="/images/10x.png">
-            <div>
-                <h2>10x Marketing Formula</h2>
+        <article class="card placeholder">
+            <img class="thumbnail" src="./images/blog-thumbnail-placeholder.png">
+            <div class="container">
+                <h2>Title</h2>
                 <p>
-                    "10x Marketing Formula" outlines a data-driven approach to content marketing, focusing on creating high-impact content that meets audience needs, scales efficiently, and delivers exponential growth for your business.
+                    Description.
                 </p>
                 <span class="date">02.09.2024</span>
             </div>
         </article>
         
-        <article class="card">
-            <img class="thumbnail" src="/images/martech-handbook.png">
-            <div>
-                <h2>The Martech Handbook</h2>
+        <article class="card placeholder">
+            <img class="thumbnail" src="./images/blog-thumbnail-placeholder.png">
+            <div class="container">
+                <h2>Title</h2>
                 <p>
-                    "The Martech Handbook" provides a comprehensive guide to navigating the complex world of marketing technology, helping businesses strategically select and integrate tools to enhance their marketing efforts and drive growth.
+                    Description. 
                 </p>
                 <span class="date">01.09.2024</span>
             </div>
@@ -87,7 +92,5 @@
     <footer>
         <p>&copy; 2024 Seitz-McIntyre Consulting.&nbsp;All rights reserved.</p>
     </footer>
-
-    <script src="main.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
