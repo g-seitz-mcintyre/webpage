@@ -7,19 +7,17 @@ body {
     box-sizing: border-box; /* Add this for consistent sizing */
 }
 
+main {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+}
+
 .nav {
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #ED712E;
-}
-
-#banner {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
 }
 
 nav ul {
@@ -45,6 +43,9 @@ li a:hover {
     background-color: #111;
 }
 
+.content {
+    flex: 1; /* Push the footer down by taking all the available space */
+}
 
 .grid-container {
     display: grid;
