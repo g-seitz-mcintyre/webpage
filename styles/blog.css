@@ -72,6 +72,10 @@ li a:hover {
     margin: 10px;
 }
 
+.date {
+    font-style: italic;
+}
+
 .spotlight {
     grid-column: 1 / -1; /* Spans all columns */
     display: grid;
