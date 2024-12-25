@@ -1,3 +1,7 @@
+body {
+    width: 100vw;
+}
+
 header {
     position: fixed;
 }
@@ -12,8 +16,13 @@ article {
     margin: 0 auto;
 }
 
-#article-img {
+#article-title-img {
+    display: block;
     margin-top: 50px;
+    width: 100%;
+}
+
+.article-body-img {
     width: 100%;
 }
 
@@ -21,6 +30,7 @@ article h2 {
     font-size: 22px;
     color: #222;
     margin: 20px 0 10px;
+    text-align: center;
 }
 
 article p {
@@ -60,6 +70,14 @@ article {
     background-color: #007bff;
     width: 0%;
     transition: width 0.1s ease-in-out;
+  }
+
+  .author-date {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
   }
   
 
