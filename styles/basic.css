@@ -7,6 +7,10 @@ body {
     box-sizing: border-box; /* Add this for consistent sizing */
 }
 
+header {
+    position: fixed;
+}
+
 main {
     display: flex;
     flex-direction: column; /* Arrange children vertically */
