@@ -83,7 +83,7 @@ article {
 
 @media only screen and (max-width: 700px) {
     article {
-        width: 100%;
+        width: 80%;
     }
 }
 
